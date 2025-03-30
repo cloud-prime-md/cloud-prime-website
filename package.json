@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "cross-env NODE_ENV=development webpack serve --config webpack.client.ts",
+    "lint": "eslint {src/**/*.js,src/**/*.jsx,src/**/*.tsx,src/**/*.ts,}",
     "prepare": "husky"
   },
   "repository": {
@@ -25,16 +26,21 @@
     "styled-components": "^6.1.16"
   },
   "devDependencies": {
+    "@eslint/js": "^9.23.0",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "copy-webpack-plugin": "^13.0.0",
     "cross-env": "^7.0.3",
     "esbuild-loader": "^4.3.0",
+    "eslint": "^9.23.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^16.0.0",
     "html-webpack-plugin": "^5.6.3",
     "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
+    "typescript-eslint": "^8.28.0",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
